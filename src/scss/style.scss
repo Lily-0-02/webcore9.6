@@ -1,0 +1,11 @@
+// Entry point for styles: fonts first, then one @use per block
+@use 'fonts';
+@use 'blocks/page';
+@use 'blocks/header';
+@use 'blocks/main';
+@use 'blocks/brands';
+@use 'blocks/devices';
+@use 'blocks/prices';
+@use 'blocks/offer';
+@use 'blocks/footer';
+@use 'blocks/menu';

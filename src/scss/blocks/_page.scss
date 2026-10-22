@@ -1,0 +1,135 @@
+// Every block file loads the variables it uses: @use is file-scoped
+@use '../variables' as vars;
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  font-family: "TT Lakes", sans-serif;
+  color: #1b1c21;
+}
+
+h3 {
+  color: vars.$accent;
+}
+button {
+  font-family: inherit;
+}
+.services__navigation {
+  display: flex;
+  gap: 8px;
+  margin-top: 24px;
+  padding: 0 16px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.services__navigation::-webkit-scrollbar {
+  display: none;
+}
+.services__tab {
+  flex-shrink: 0;
+  height: 40px;
+  padding: 0 16px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #7e7e82;
+  font-family: 'TT Lakes', sans-serif;
+  font-size: 16px;
+  white-space: nowrap;
+}
+.services__tab:focus {
+  border-color: #9cefe1;
+  background-color: #ffffff;
+  outline: none;
+}
+.services__description {
+  margin-top: 24px;
+  padding: 0 16px;
+}
+.services__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: #1b1c21;
+}
+.services__read-more {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  font-family: 'TT Lakes', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #1b1c21;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url('../img/expand.png') center / contain no-repeat;
+  }
+}
+.services__image {
+  margin-top: 16px;
+  width: 100%;
+  overflow: hidden;
+}
+.services__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.services__text-extra {
+  display: none;
+  font-size: 14px;
+  line-height: 18px;
+}
+.services__text-extra--open {
+  display: block;
+}
+.services__read-more--open::before {
+  transform: rotate(180deg);
+}
+@media (min-width: 1120px) {
+  body {
+    display: grid;
+    grid-template-columns: 320px minmax(0, 1fr);
+    align-items: stretch;
+  }
+  .services__navigation {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: visible;
+    column-gap: 16px;
+    row-gap: 8px;
+  }
+  .services__tab {
+    flex: 0 0 auto;
+    width: auto;
+  }
+  .menu {
+    grid-column: 1;
+    grid-row: 1 / 4;
+    position: static;
+    height: auto;
+    min-height: 100%;
+    background-color: #fff;
+  }
+  .header, .main, .footer {
+    grid-column: 2;
+    min-width: 0;
+  }
+  .menu-overlay {
+    display: none;
+  }
+}

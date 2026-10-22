@@ -1,0 +1,120 @@
+.devices-section {
+  margin-top: 24px;
+  background-color: #f8f8f8;
+}
+
+.devices-section__title {
+  margin: 0;
+  padding: 16px;
+  border-top: 1px solid #d9fff5;
+  background: linear-gradient(90deg, #f8f8f8, #ffffff);
+  color: #7e7e82;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.devices {
+  padding: 16px 0 32px 16px;
+  overflow: hidden;
+}
+
+.devices .swiper-slide.device-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 240px;
+  height: 160px;
+  padding: 16px;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  background-color: #ffffff;
+  flex-shrink: 0;
+}
+
+.device-card__name {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.device-card__arrow {
+  align-self: flex-end;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.device-card__arrow img {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.devices-section__show-all {
+  display: none;
+}
+.devices-section__show-all-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s;
+}
+.devices-section__show-all--open .devices-section__show-all-icon {
+transform: rotate(180deg);
+}
+.devices-section .swiper-pagination {
+  position: relative;
+  bottom: auto;
+  margin-top: 16px;
+}
+
+.devices-section .swiper-pagination-bullet-active {
+  background-color: #b5b6bc;
+}
+
+@media (min-width: 768px) {
+  .devices .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3,224px);
+    gap: 16px 24px;
+  }
+  .devices .swiper-slide {
+    width: 224px;
+    height: 160px;
+    margin: 0;
+  }
+  .devices .swiper-slide:nth-child(n+4) {
+  display: none;
+  }
+  .devices .swiper-pagination {
+    display: none;
+  }
+  .devices-section__show-all {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+    margin-top: 24px;
+    border: none;
+    background: transparent;
+    font-family: "TT Lakes", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .devices--open .swiper-slide:nth-child(n+4) {
+    display: flex;
+  }
+}
+@media (min-width: 1120px) {
+  .devices .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px 24px;
+  }
+  .devices .swiper-slide:nth-child(4) {
+    display: flex;
+  }
+}
