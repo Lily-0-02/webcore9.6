@@ -139,13 +139,13 @@ opacity: 0.6;
 @media(min-width: 1120px) {
     .menu {
         width: 320px;
-        box-shadow: none;
         position: static;
+        height: 100vh;
+        flex-shrink: 0;
+        align-self: flex-start;
         overflow: visible;
         transform: none;
         box-shadow: none;
-        height: auto;
-
     }
     .menu-overlay {
         display: none;
