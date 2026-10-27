@@ -1,0 +1,426 @@
+<!doctype html><html lang=ru><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>CPS — Ремонт техники</title><script defer src=js/bundle.js></script><link href=style.css rel=stylesheet></head><body>
+    <aside class=menu id=sidebar-menu>
+      <header class=menu__header>
+        <div class=menu__left>
+          <button class="menu__button js-menu-close" type=button aria-label="Закрыть меню">
+            <img src=./img/close.png alt="close the menu">
+          </button>
+          <img src=./img/Group.png class=menu__logo alt=CPS>
+        </div>
+        <button class=menu__button>
+          <img src=./img/search.png alt=search>
+        </button>
+      </header>
+      <nav class=menu__nav>
+        <a class="menu__item menu__item--active" href=#>Ремонт техники</a>
+        <a class=menu__item href=#>Услуги и сервисы</a>
+        <a class=menu__item href=#>Корпоративным клиентам</a>
+        <a class=menu__item href=#>Продавцам техники</a>
+        <a class=menu__item href=#>Партнерам</a>
+        <a class=menu__item href=#>Производителям</a>
+        <a class=menu__item href=#>Наши сервисные центры</a>
+        <a class=menu__item href=#>Контакты</a>
+      </nav>
+      <footer class=menu__footer>
+        <div class=menu__contact>
+          <button class=menu__button>
+            <img src="./img/chat copy.png" class=menu__contactme alt=call>
+          </button>
+          <button class=menu__button>
+            <img src=./img/chat.png class=menu__contactme alt=chat>
+          </button>
+          <button class=menu__button>
+            <img src=./img/profile.png class=menu__contactme alt=profile>
+          </button>
+        </div>
+        <a class=menu__email href=#> mail@cps.com</a>
+        <a class=menu__phone href=#>8 800 890 8900</a>
+        <div class=menu__languages>
+          <button class=menu__language type=button>RU</button>
+          <button class=menu__language type=button>EN</button>
+          <button class=menu__language type=button>CH</button>
+        </div>
+      </footer>
+    </aside>
+    <div class=menu-overlay></div>
+    <header class=header>
+      <div class=header__left>
+        <button class="header__button header__button--menu js-menu-open" type=button aria-label="Открыть меню" aria-controls=asidebar-menu area-expanded=false>
+          <img src=./img/burger.png alt>
+        </button>
+
+        <div class=header__logo>
+          <img src=./img/Group.png alt=CPS>
+        </div>
+        <span class=header__divider aria-hidden=true></span>
+      </div>
+
+      <div class=header__right>
+        <div class=header__contacts>
+          <button type=button class=header__button>
+            <img src=./img/call.png alt=Позвонить>
+          </button>
+
+          <button type=button class=header__button>
+            <img src=./img/chat.png alt=Чат>
+          </button>
+
+          <button type=button class=header__button>
+            <img src=./img/profile.png alt=Профиль>
+          </button>
+        </div>
+
+        <button class="header__button header__button--repair" type=button aria-label="Оставить заявку">
+          <img src=./img/repair.png alt>
+        </button>
+
+        <button class="header__button header__button--status" type=button aria-label="Статус ремонта">
+          <img src=./img/checkstatus.png alt>
+        </button>
+      </div>
+    </header>
+    <main class=main>
+      <div class=main__top>
+        <h1 class=main__title>Услуги и сервисы</h1>
+
+        <div class=main__actions>
+          <button class=main__action type=button>
+            <span>Оставить заявку</span>
+            <img src=./img/repair.png alt>
+          </button>
+
+          <button class=main__action type=button>
+            <span>Статус ремонта</span>
+            <img src=./img/checkstatus.png alt>
+          </button>
+        </div>
+      </div>
+      <nav class=services__navigation>
+        <button class=services__tab type=button>
+          Ремонтируемые бренды
+        </button>
+
+        <button class=services__tab type=button>
+          Дополнительные услуги
+        </button>
+
+        <button class=services__tab type=button> Цены на услуги </button>
+
+        <button class=services__tab type=button>
+          Адреса сервисных центров
+        </button>
+
+        <button class=services__tab type=button> Специальные цены </button>
+
+        <button class=services__tab type=button> Отзывы </button>
+      </nav>
+      <div class=services__content>
+        <div class=services__description>
+          <p class=services__text>
+            Мы являемся авторизованным сервисным центром по ремонту техники
+            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+            официальной гарантией производителя.
+          </p>
+          <p class=services__text-extra>
+            Мы успешно работаем с 1992 года и заслужили репутацию надежного
+            партнера, что подтверждает большое количество постоянных клиентов.
+            Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+            очередь, советуют нас родным и близким.
+          </p>
+          <button class=services__read-more type=button>
+            Читать далее
+          </button>
+        </div>
+        <div class=services__image>
+          <img src="./img/Picture Copy.png" alt="Сервисный центр">
+        </div>
+      </div>
+      <section class=brand-section>
+        <h2 class=brands-section__title>Ремонт техники различных брендов</h2>
+        <div class="swiper brands">
+          <div class=swiper-wrapper>
+            <div class="swiper-slide brand-card">
+              <img class=brand-card__logo src=./img/lenovo.png alt=lenovo>
+              <button class=brand-card__arrow type=button>
+                <img src=./img/arrow.png alt>
+              </button>
+            </div>
+            <div class="swiper-slide brand-card">
+              <img class=brand-card__logo src=./img/samsung.png alt=samsung>
+              <button class=brand-card__arrow type=button>
+                <img src=./img/arrow.png alt>
+              </button>
+            </div>
+            <div class="swiper-slide brand-card">
+              <img class=brand-card__logo src=./img/apple.png alt=apple>
+              <button class=brand-card__arrow type=button>
+                <img src=./img/arrow.png alt>
+              </button>
+            </div>
+            <div class="swiper-slide brand-card">
+              <img class=brand-card__logo src=./img/viewsonic.png alt=viewsonic>
+              <button class=brand-card__arrow type=button>
+                <img src=./img/arrow.png alt>
+              </button>
+            </div>
+            <div class="swiper-slide brand-card">
+              <img class=brand-card__logo src=./img/bosch.png alt=bosch>
+              <button class=brand-card__arrow type=button>
+                <img src=./img/arrow.png alt>
+              </button>
+            </div>
+            <div class="swiper-slide brand-card">
+              <img class=brand-card__logo src=./img/hp.png alt=hp>
+              <button class=brand-card__arrow type=button>
+                <img src=./img/arrow.png alt>
+              </button>
+            </div>
+            <div class="swiper-slide brand-card">
+              <img class=brand-card__logo src=./img/acer.png alt=acer>
+              <button class=brand-card__arrow type=button>
+                <img src=./img/arrow.png alt>
+              </button>
+            </div>
+
+            <div class="swiper-slide brand-card">
+              <img class=brand-card__logo src=./img/sony.png alt=sony>
+              <button class=brand-card__arrow type=button>
+                <img src=./img/arrow.png alt>
+              </button>
+            </div>
+            <div class="swiper-slide brand-card">
+              <img class=brand-card__logo src=./img/lenovo.png alt=lenovo>
+              <button class=brand-card__arrow type=button>
+                <img src=./img/arrow.png alt>
+              </button>
+            </div>
+            <div class="swiper-slide brand-card">
+              <img class=brand-card__logo src=./img/samsung.png alt=samsung>
+              <button class=brand-card__arrow type=button>
+                <img src=./img/arrow.png alt>
+              </button>
+            </div>
+            <div class="swiper-slide brand-card">
+              <img class=brand-card__logo src=./img/apple.png alt=apple>
+              <button class=brand-card__arrow type=button>
+                <img src=./img/arrow.png alt>
+              </button>
+            </div>
+          </div>
+          <div class=swiper-pagination></div>
+        </div>
+        <button class=show-all type=button>
+          <img class=show-all__icon src=./img/expand.png alt>
+          <span class=show-all__text> Показать все</span>
+        </button>
+      </section>
+      <section class=devices-section>
+        <h2 class=devices-section__title> Ремонт различных видов техники </h2>
+
+        <div class="swiper devices">
+          <div class=swiper-wrapper>
+            <div class="swiper-slide device-card">
+              <span class=device-card__name>Ремонт ноутбуков</span>
+              <button class=device-card__arrow type=button aria-label="Ремонт ноутбуков">
+                <img src=./img/arrow.png alt>
+              </button>
+            </div>
+
+            <div class="swiper-slide device-card">
+              <span class=device-card__name>Ремонт планшетов</span>
+              <button class=device-card__arrow type=button aria-label="Ремонт планшетов">
+                <img src=./img/arrow.png alt>
+              </button>
+            </div>
+
+            <div class="swiper-slide device-card">
+              <span class=device-card__name>Ремонт ПК</span>
+              <button class=device-card__arrow type=button aria-label="Ремонт ПК">
+                <img src=./img/arrow.png alt>
+              </button>
+            </div>
+            <div class="swiper-slide device-card">
+              <span class=device-card__name>Ремонт мониторов </span>
+              <button class=device-card__arrow type=button aria-label="Ремонт  мониторов">
+                <img src=./img/arrow.png alt>
+              </button>
+            </div>
+            <div class="swiper-slide device-card">
+              <span class=device-card__name>Ремонт ПК</span>
+              <button class=device-card__arrow type=button aria-label="Ремонт ПК">
+                <img src=./img/arrow.png alt>
+              </button>
+            </div>
+            <div class="swiper-slide device-card">
+              <span class=device-card__name>Ремонт мониторов </span>
+              <button class=device-card__arrow type=button aria-label="Ремонт  мониторов">
+                <img src=./img/arrow.png alt>
+              </button>
+            </div>
+          </div>
+
+          <div class=swiper-pagination></div>
+        </div>
+
+        <button class=devices-section__show-all type=button>
+          <img class=devices-section__show-all-icon src=./img/expand.png alt>
+          <span class=devices-section__show-all-text> Показать все </span>
+        </button>
+      </section>
+      <section class=prices-section>
+        <h2 class=prices-section__title> Цены на услуги </h2>
+        <div class=prices-head>
+          <span> Ремонтные услуги</span>
+          <span> Цена</span>
+          <span>Срок</span>
+          <span></span>
+        </div>
+        <div class="swiper prices">
+          <div class=swiper-wrapper>
+            <div class="swiper-slide price-card">
+              <div class=price-card__service>
+                <span class=price-card__label> Ремонтные услуги </span>
+                <p class=price-card__name>
+                  Тестирование с выдачей технического заключения
+                </p>
+              </div>
+
+              <div class=price-card__cost>
+                <span class=price-card__label>Цена</span>
+                <p class=price-card__value>Бесплатно</p>
+              </div>
+
+              <div class=price-card__bottom>
+                <div class=price-card__duration>
+                  <span class=price-card__label>Срок</span>
+                  <p class=price-card__value>30–120 мин</p>
+                </div>
+
+                <button class=price-card__order type=button>
+                  ЗАКАЗАТЬ
+                  <span aria-hidden=true>›</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="swiper-slide price-card">
+              <div class=price-card__service>
+                <span class=price-card__label> Ремонтные услуги </span>
+                <p class=price-card__name> Диагностика техники </p>
+              </div>
+
+              <div class=price-card__cost>
+                <span class=price-card__label>Цена</span>
+                <p class=price-card__value>Бесплатно</p>
+              </div>
+
+              <div class=price-card__bottom>
+                <div class=price-card__duration>
+                  <span class=price-card__label>Срок</span>
+                  <p class=price-card__value>30–120 мин</p>
+                </div>
+                <button class=price-card__order type=button>Заказать
+                  <span aria-hidden=true> ›</span>
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide price-card">
+              <div class=price-card__service>
+                <span class=price-card__label>Ремонтные услуги</span>
+                <p class=price-card__name>Замена дисплея</p>
+              </div>
+
+              <div class=price-card__cost>
+                <span class=price-card__label>Цена</span>
+                <p class=price-card__value>1 000 ₽</p>
+              </div>
+
+              <div class=price-card__bottom>
+                <div class=price-card__duration>
+                  <span class=price-card__label>Срок</span>
+                  <p class=price-card__value>30–120 мин</p>
+                </div>
+
+                <button class=price-card__order type=button>
+                  ЗАКАЗАТЬ
+                  <span aria-hidden=true>❯</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="swiper-slide price-card">
+              <div class=price-card__service>
+                <span class=price-card__label>Ремонтные услуги</span>
+                <p class=price-card__name>Замена полифонического динамика</p>
+              </div>
+
+              <div class=price-card__cost>
+                <span class=price-card__label>Цена</span>
+                <p class=price-card__value>1 000 ₽</p>
+              </div>
+
+              <div class=price-card__bottom>
+                <div class=price-card__duration>
+                  <span class=price-card__label>Срок</span>
+                  <p class=price-card__value>30–120 мин</p>
+                </div>
+
+                <button class=price-card__order type=button>
+                  ЗАКАЗАТЬ
+                  <span aria-hidden=true>❯</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="swiper-slide price-card">
+              <div class=price-card__service>
+                <span class=price-card__label>Ремонтные услуги</span>
+                <p class=price-card__name>Замена программного обеспечения</p>
+              </div>
+
+              <div class=price-card__cost>
+                <span class=price-card__label>Цена</span>
+                <p class=price-card__value>1 000 ₽</p>
+              </div>
+
+              <div class=price-card__bottom>
+                <div class=price-card__duration>
+                  <span class=price-card__label>Срок</span>
+                  <p class=price-card__value>30–120 мин</p>
+                </div>
+
+                <button class=price-card__order type=button>
+                  ЗАКАЗАТЬ
+                  <span aria-hidden=true>❯</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class=swiper-pagination></div>
+        </div>
+      </section>
+      <div class=commercial-offer>
+        <p class=commercial-offer__text>
+          Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную
+          услугу. Для получения коммерческого предложения на постоянное
+          обслуживание, оставьте заявку.
+        </p>
+
+        <a class=commercial-offer__link href=#>
+          Получить коммерческое предложение
+        </a>
+      </div>
+    </main>
+    <footer class=footer>
+      <p class=footer__copyright> © 2019 CPS Разработано командой Apesong </p>
+
+      <a class=footer__privacy href=#> Политика конфиденциальности </a>
+
+      <p class=footer__disclaimer>
+        Информация, размещенная на данной странице, не является публичной
+        офертой
+      </p>
+    </footer>
+  
+
+</body></html>
